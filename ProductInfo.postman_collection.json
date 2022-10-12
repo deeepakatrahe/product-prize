@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "870721e3-8b57-4d6c-a05a-1d8bc7961a4d",
+		"name": "ProductInfo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18914509"
+	},
+	"item": [
+		{
+			"name": "AllProductDetails",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "saveProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productId\":\"1003\",\r\n    \"productName\":\"Lenovo Yoga\",\r\n    \"productType\":\"Laptop\",\r\n    \"productCategory\":\"Electronics\",\r\n    \"basePrice\":\"45000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/saveProduct",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"saveProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProductById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productId\":\"1001\",\r\n    \"productName\":\"Laptop\",\r\n    \"productType\":\"ll\",\r\n    \"productCategory\":\"aa\",\r\n    \"productPrice\":\"dd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/getProductDetails/120",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getProductDetails",
+						"120"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteProductById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productId\":\"1001\",\r\n    \"productName\":\"Laptop\",\r\n    \"productType\":\"ll\",\r\n    \"productCategory\":\"aa\",\r\n    \"productPrice\":\"dd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/deleteProduct/120",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deleteProduct",
+						"120"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteProductById Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productName\":\"top\",\r\n    \"productType\":\"lqqq\",\r\n    \"productCategory\":\"aa\",\r\n    \"productPrice\":\"dd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/updateProduct/120",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"updateProduct",
+						"120"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
